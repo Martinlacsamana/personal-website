@@ -19,6 +19,7 @@ const config: Config = {
       colors: {
         'custom-yellow': '#FCF7E6',
         'custom-gray': '#D3D1D1',
+        
       },
       fontSize: {
         'xl': '20px',
@@ -28,6 +29,10 @@ const config: Config = {
       fontWeight: {
         'light': '300',
       },
+      animation: {
+        'bounce100': 'bounce 1s infinite 100ms',
+        'bounce200': 'bounce 1s infinite 200ms',
+      }
     },
   },
   plugins: [],

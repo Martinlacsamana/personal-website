@@ -1,6 +1,9 @@
-
+"use client"
+import React, { useState } from 'react';
 
 const myInfo = () => {
+    const [activeTab, setActiveTab] = useState('About');
+
     return (
         <div className="w-3/4">
             {/* Header to showcase this is our personal website */}
@@ -18,18 +21,37 @@ const myInfo = () => {
             <div className="pt-6">
                 <div className="flex space-x-4 pb-4">
                     
-                    <h3 className="text-lg font-semibold underline">About</h3>
-                    <h3 className="text-lg">Education</h3>
-                    
-                </div>
-                
-                <p className="pb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                </p>
+                <h3 
+                    className={`text-lg cursor-pointer hover:text-blue-500 ${activeTab === 'About' ? 'font-semibold underline' : ''}`}
+                    onClick={() => setActiveTab('About')}>
+                    About
+                </h3>
 
+                <h3 
+                    className={`text-lg cursor-pointer hover:text-blue-500 ${activeTab === 'Education' ? 'font-semibold underline' : ''}`}
+                    onClick={() => setActiveTab('Education')}>
+                    Education
+                </h3>
+            </div>
+                
+            {activeTab === 'About' && (
+            <p className="pb-4">
+                Martin is him. He's so attractive that it hurts my eyes. He's also duel-professioned. Vibes Engineer by day. Batman by night. Can we just take a moment to enjoy his heroics.
+            </p>
+            )}
+
+            {/* Decide how you want to style this not sure yet*/}
+            {activeTab === 'Education' && (
+            <>
                 <p>
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                    University of California Berkeley
                 </p>
+                <p>
+                    Electrical Engineering and Computer Science
+                </p>
+            </>
+            )}
+
             </div>
 
         </div>
