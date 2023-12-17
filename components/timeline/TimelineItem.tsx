@@ -10,7 +10,7 @@ interface TimelineItemProps {
 
 const TimelineItem: React.FC<TimelineItemProps> = ({ year, title, description, position, svg }) => {
   return (
-    <li>
+    <li className="timeline-item">
       <div className="timeline-middle m-4">
         {svg ? (
           <img src={svg} className="h-16 w-16" alt="" />

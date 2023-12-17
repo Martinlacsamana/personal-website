@@ -1,5 +1,19 @@
+import React, { useEffect } from 'react';
 import TimelineItem from "./TimelineItem"
+import ScrollReveal from 'scrollreveal'
+
 const Timeline = () => {
+    useEffect(() => {
+        ScrollReveal().reveal('.timeline-item', { 
+            delay: 300,
+            distance: '50px',
+            origin: 'bottom',
+            reset: false,
+            easing: 'ease-in-out',
+            interval: 200
+        });
+    }, []);
+
     return (
       
         <div className="flex justify-center" style={{background: '#FCF7E6'}}>
@@ -9,6 +23,7 @@ const Timeline = () => {
                 </h1>
 
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                    
                     <TimelineItem
                         year="2020"
                         title="Tumalon"
@@ -16,6 +31,8 @@ const Timeline = () => {
                         position="start"
                         svg="/TumalonDownload.jpeg"
                     />
+                    
+                    
                     <TimelineItem
                         year="2021"
                         title="Ceros"

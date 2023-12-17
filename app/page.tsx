@@ -1,10 +1,20 @@
+"use client"
 import Image from 'next/image'
 import MyInfo from '@/components/hero/MyInfo'
 import ProfilePicture from '@/components/hero/ProfilePicture'
 import ArrowIndicator from '@/components/hero/ArrowIndicator'
 import Timeline from '@/components/timeline'
+import React, { useRef } from 'react'; // Import useRef
 
 export default function Home() {
+  const timelineRef = useRef<HTMLDivElement>(null); // Specify the type of the ref
+
+  const scrollToTimeline = () => {
+    if (timelineRef.current) {
+      timelineRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div>
       {/* This is the hero page */}
@@ -21,10 +31,12 @@ export default function Home() {
       </div>
 
       {/* Arrow Indicator */}
-      <ArrowIndicator/>
+      <ArrowIndicator onClick={scrollToTimeline}/> {/* Pass the scrollToTimeline function as a prop to the ArrowIndicator component */}
 
       {/* This is the experiences timeline page */}
-      <Timeline/>
+      <div ref={timelineRef}> {/* Add the ref to this div */}
+        <Timeline/>
+      </div>
       
       
     </div>
