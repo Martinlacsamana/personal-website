@@ -7,9 +7,15 @@ const ProfilePicture = () => {
             </div>
             
             <div className="flex justify-between space-x-5 pt-8">
-                <Image src="/github-50.png" alt="Image 1" width={50} height={50} />
-                <Image src="/gmail-48.png" alt="Image 2" width={45} height={50} />
-                <Image src="/linkedin-48.png" alt="Image 3" width={50} height={50} />
+                <a href="https://github.com/Martinlacsamana" target="_blank" rel="noopener noreferrer">
+                    <Image src="/github-50.png" alt="Github" width={50} height={50} />
+                </a>
+                <a href="mailto:martinlacsamana@berkeley.edu">
+                    <Image src="/gmail-48.png" alt="Gmail" width={45} height={50} />
+                </a>
+                <a href="https://www.linkedin.com/in/martin-lacsamana-18a712168" target="_blank" rel="noopener noreferrer">
+                    <Image src="/linkedin-48.png" alt="LinkedIn" width={50} height={50} />
+                </a>
             </div>
         </div>
     

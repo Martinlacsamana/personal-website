@@ -12,7 +12,7 @@ const ArrowIndicator: React.FC<ArrowIndicatorProps> = ({ onClick }) => {
             {/* <div className="animate-bounce mb-[-8px]">
                 <Image src="/white-down-arrow-png-2.png" alt="Down arrow" width={20} height={20} />
             </div> */}
-            <div className="animate-bounce mb-[-16px]">
+            <div className="animate-bounce mb-[-18px]">
                 <Image src="/white-down-arrow-png-2.png" alt="Down arrow" width={30} height={30} />
             </div>
             {/* <div className="animate-bounce100  mb-[-20px]">

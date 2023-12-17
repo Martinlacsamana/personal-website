@@ -13,13 +13,13 @@ const Timeline = () => {
             interval: 200
         });
     }, []);
-
+``
     return (
       
         <div className="flex justify-center" style={{background: '#FCF7E6'}}>
             <div className=" min-h-screen pt-12">
                 <h1 className="text-center mb-12" style={{ color: '#395162', fontSize: '48px', fontStyle: 'italic', fontWeight: 400, lineHeight: 'normal' }}>
-                Experiences Timeline
+                Timeline
                 </h1>
 
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -27,7 +27,7 @@ const Timeline = () => {
                     <TimelineItem
                         year="2020"
                         title="Tumalon"
-                        description="The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. It played a pivotal role in establishing desktop publishing as a general office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; it came with a keyboard and single-button mouse."
+                        description=" A brand to spread awareness on the harmful effects of CO2 emissions in the atmosphere."
                         position="start"
                         svg="/TumalonDownload.jpeg"
                     />
@@ -36,42 +36,43 @@ const Timeline = () => {
                     <TimelineItem
                         year="2021"
                         title="Ceros"
-                        description="The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. It played a pivotal role in establishing desktop publishing as a general office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; it came with a keyboard and single-button mouse."
+                        description=" Internship doing the xyz"
                         position="end"
                         svg="/Ceros.png"
                     />
                     <TimelineItem
                         year="2021"
                         title="Grduation and accepted into UC Berkeley"
-                        description="The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. It played a pivotal role in establishing desktop publishing as a general office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; it came with a keyboard and single-button mouse."
+                        description="Got into Berkeley which I was extremely excited for"
                         position="start"
                         svg="/BerkDownload.png"
                     />
+                    {/* Got into Berkeley -> can put fireworks effect here. */}
                     <TimelineItem
                         year="2021"
                         title="Superlative Secret Society"
-                        description="The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. It played a pivotal role in establishing desktop publishing as a general office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; it came with a keyboard and single-button mouse."
+                        description="Did the thing"
                         position="end"
                         svg="/SuperlativeSS.jpeg"
                     />
                     <TimelineItem
                         year="2021"
                         title="Shaq Gives Back"
-                        description="The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. It played a pivotal role in establishing desktop publishing as a general office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; it came with a keyboard and single-button mouse."
+                        description="Did another thing"
                         position="end"
                         svg="/ShaqGivesBack.avif"
                     />
                     <TimelineItem
                         year="2023"
                         title="Academic Intern"
-                        description="The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. It played a pivotal role in establishing desktop publishing as a general office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; it came with a keyboard and single-button mouse."
+                        description="Did another thing we are doing"
                         position="start"
                         svg="/EECSBerkeley.png"
                     />
                     <TimelineItem
                         year="Current"
                         title="Elavize"
-                        description="The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. It played a pivotal role in establishing desktop publishing as a general office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; it came with a keyboard and single-button mouse."
+                        description="Elavize is the shit it's pretty damn fun tbh"
                         position="end"
                         svg="/footer copy.png"
                     />
