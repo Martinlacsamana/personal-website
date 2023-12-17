@@ -19,6 +19,7 @@ const config: Config = {
       colors: {
         'custom-yellow': '#FCF7E6',
         'custom-gray': '#D3D1D1',
+        'custom-peach': '#EEA47F'
         
       },
       fontSize: {
@@ -35,6 +36,6 @@ const config: Config = {
       }
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 export default config
