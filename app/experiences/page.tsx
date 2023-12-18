@@ -1,8 +1,9 @@
-
+import Modal from "@/components/modal"
 const Experiences = () => {
     return (
         <div>
-            <h1> Hola </h1>
+            
+            <Modal/>
         </div>
     )
 }
